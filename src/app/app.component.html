@@ -1,0 +1,23 @@
+
+<h2>
+  Explore general angular concepts:
+</h2>
+
+<input [(ngModel)]="name" type="text" placeholder="Type here to see live data.." >
+
+<h3>Input typed msg: {{name}}</h3>
+
+<button (click)='updateData()'>Update input msg</button>
+
+<h3>For loop iteration example:</h3>
+<div *ngFor="let alphabate of rowData">
+  {{alphabate}}
+</div>
+
+
+<h2>Explore Rounting and Navigation:</h2>
+<nav>
+  <a routerLink="/department">Department data</a>
+  <a routerLink="/employee">Employee data</a>
+</nav>
+<router-outlet></router-outlet>

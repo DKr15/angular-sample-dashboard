@@ -1,0 +1,23 @@
+<p>department works!</p>
+
+<h2>Live data from Department Service:</h2>
+
+<input type= text [(ngModel)]="departmentName" placeholder="Type department name..">
+<button (click)='postDataMethod()'> Post Data</button>
+
+<h3>Department data :</h3>
+<button (click)='getDataMethod()'> List All Department</button>
+
+<table>
+    <tr>
+      <th>Dep Id</th>
+      <th>Dep Name</th>
+    </tr>
+    
+    <tr *ngFor="let emp of employeeData">
+      <td>{{emp.depId}}</td>
+      <td>{{emp.depName}}</td>
+    </tr>
+</table>
+
+<h2>{{errMsg}}</h2>
